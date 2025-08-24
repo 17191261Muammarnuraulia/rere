@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>to my love</title>
+    <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+</head>
+
+<body>
+    <div class="background-decor">
+        <img src="bunga.png" class="flower" style="left: 10%; animation-delay: 0s; width: 80px;">
+        <img src="bunga.png" class="flower" style="left: 70%; animation-delay: 3s; width: 100px;">
+        <img src="kupu.png" class="butterfly" style="left: 80%; top: 80%; width: 80px; animation-delay: 1s;">
+        <img src="kupu.png" class="butterfly" style="left: 80%; top: 90%; width: 1100px; animation-delay: 2s;">
+    </div>
+
+    <div class="container">
+        <!-- Popup page -->
+        <div id="popup" class="active">
+            <h2 id="popupText">sorry if it sounds cheesy, i just can't help it when it's someone i really love, Rayhan Hanan Herlisman <3</h2>
+            <button onclick="nextPopup()">tap!</button>
+        </div>
+
+        <!-- Question page -->
+        <div id="questionPage">
+            <h2><b></b>wanna see the prettiest girl who stole my heart</b><br><b>just with her eyes?</b></h2>
+            <div>
+        <button onclick="goToGallery()">mauuuu</button>
+
+        <button id="noBtn" onclick="moveNoBtn()">tidakk</button>
+            </div>
+        </div>
+
+        <!-- Gallery page -->
+        <div id="galleryPage">
+            <!-- Audio with autoplay and muted -->
+            <audio id="audio" autoplay muted loop>
+                <source src="lagu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h1><b>the prettiest girl i’ve ever met 💗💞</b></h1>
+            <div class="gallery">
+                <!-- Gambar-gambar foto -->
+                <img src="foto1.jpg" alt="Foto kamu">
+                <img src="foto2.jpg" alt="Foto kamu">
+                <img src="foto3.jpg" alt="Foto kamu">
+                <img src="foto4.jpg" alt="Foto kamu">
+                <img src="foto5.jpg" alt="Foto kamu">
+                <img src="foto6.jpg" alt="Foto kamu">
+                <img src="foto7.jpg" alt="Foto kamu">
+                <img src="foto8.jpg" alt="Foto kamu">
+                <img src="foto9.jpg" alt="Foto kamu">
+                <img src="foto10.jpg" alt="Foto kamu">
+                <img src="foto11.jpg" alt="Foto kamu">
+                <img src="foto12.jpg" alt="Foto kamu">
+                <img src="foto13.jpg" alt="Foto kamu">
+                <img src="foto14.jpg" alt="Foto kamu">
+                <img src="foto15.jpg" alt="Foto kamu">
+                <img src="foto16.jpg" alt="Foto kamu">
+                <img src="foto2.jpg" alt="Foto kamu">
+                <img src="foto4.jpg" alt="Foto kamu">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menyertakan file JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        // Fungsi untuk memulai audio setelah interaksi pengguna (untuk perangkat mobile)
+        document.addEventListener("click", function () {
+            var audio = document.getElementById('audio');
+            audio.muted = false; // Matikan mute untuk memulai suara setelah klik
+            audio.play();        // Memulai audio
+        });
+    </script>
+</body>
+
+</html>
